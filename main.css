@@ -1,0 +1,283 @@
+body{
+    text-align: center;
+    background: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST8cUUqeGEXfuO_bzeFyZGIglnMTamJ84raCj53DC6WXuyzwkb") no-repeat center center fixed;
+    background-size: cover !important;
+    margin: 0;
+    height: 100%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #1E90FF;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 356px;
+    font-family: 'Droid Serif', serif;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #4169E1;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 356px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Droid Serif', serif;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 80px;
+  padding: 12px 8px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #131313;
+    letter-spacing: .15em;
+    text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a, 
+      -5px 10px 1px #7f7d7d, 
+      -6px 12px 1px #828181, 
+      -7px 14px 1px #868585, 
+      -8px 16px 1px #8b8a89, 
+      -9px 18px 1px #8f8e8d, 
+      -10px 20px 1px #949392, 
+      -11px 22px 1px #999897, 
+      -12px 24px 1px #9e9c9c, 
+      -13px 26px 1px #a3a1a1, 
+      -14px 28px 1px #a8a6a6, 
+      -15px 30px 1px #adabab, 
+      -16px 32px 1px #b2b1b0, 
+      -17px 34px 1px #b7b6b5, 
+      -18px 36px 1px #bcbbba, 
+      -19px 38px 1px #c1bfbf, 
+      -20px 40px 1px #c6c4c4, 
+      -21px 42px 1px #cbc9c8, 
+      -22px 44px 1px #cfcdcd, 
+      -23px 46px 1px #d4d2d1, 
+      -24px 48px 1px #d8d6d5, 
+      -25px 50px 1px #dbdad9, 
+      -26px 52px 1px #dfdddc, 
+      -27px 54px 1px #e2e0df, 
+      -28px 56px 1px #e4e3e2;
+}
+
+.child{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+html{
+    height:100%;
+
+}
+
+
+
+
+
+
+
+
+/*navigation bar*/
+
+#wrap   {
+    width: 100%; /* Spans the width of the page */
+    height: 50px; 
+    margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+    z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+    position: relative; 
+    background-color: #366b82;
+    }
+
+.navbar {
+    height: 50px;
+        padding: 0;
+    margin: 0;
+    position: absolute; /* Ensures that the menu doesn’t affect other elements */
+    border-right: 1px solid #54879d; 
+    }
+
+.navbar li  {
+            height: auto;
+            width: 150px;  /* Each menu item is 150px wide */
+            float: left;  /* This lines up the menu items horizontally */
+            text-align: center;  /* All text is placed in the center of the box */
+            list-style: none;  /* Removes the default styling (bullets) for the list */
+            font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+            padding: 0;
+            margin: 0;
+            background-color: #366b82;
+                        }
+
+.navbar a   {                           
+        padding: 18px 0;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+        border-left: 1px solid #54879d; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+        border-right: 1px solid #1f5065; /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+        text-decoration: none;  /* Removes the default hyperlink styling. */
+        color: white; /* Text color is white */
+        display: block;
+        }
+
+.navbar li:hover, a:hover {background-color: #54879d;} 
+
+.navbar li ul   {
+        display: none;  /* Hides the drop-down menu */
+        height: auto;                                   
+        margin: 0; /* Aligns drop-down box underneath the menu item */
+        padding: 0; /* Aligns drop-down box underneath the menu item */         
+        }               
+
+.navbar li:hover ul     {
+                        display: block; /* Displays the drop-down box when the menu item is hovered over */
+                        }
+
+.navbar li ul li {background-color: #54879d;} 
+
+.navbar li ul li a  {
+        border-left: 1px solid #1f5065; 
+        border-right: 1px solid #1f5065; 
+        border-top: 1px solid #74a3b7; 
+        border-bottom: 1px solid #1f5065; 
+        }
+                
+.navbar li ul li a:hover    {background-color: #366b82;}
+
+
+.hidden { display: none; }
+
+
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.column {
+    padding: 15px 5px;
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+  .column {
+    width: calc(50% - 10px);
+    
+  }
+}
+
+@media (min-width: 1000px) {
+  .column {
+    width: calc(33.3% - 10px);
+  }
+}
+
+@media (min-width: 1000px) {
+    .column.half {
+        width: calc(50% - 10px);
+    }
+}
+
+.half:nth-of-type(2) h2{
+    float:left;
+    padding-left: 50px;
+}
+.half:nth-of-type(1) h2{
+    float:right;
+    padding-right: 50px;
+}
+
+
+
+#streambox{
+    float:left;
+}
+
+
+
+#game b {  
+font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+    font-size:30px;
+    letter-spacing: .05em;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.profilelogo{
+height:70px;
+width:auto;
+border-radius:70px;
+}
+
+#searchbox{
+    margin-top:20%;
+    text-align:center;
+}
+
+#banner img{ 
+    width:1200px;
+    height:200px;
+}
+
+#twitchinfo{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#title{
+    font-size:40px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#twitchinfo{
+    width:calc(100% - 500px);
+    float:right;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Merriweather+Sans" rel="stylesheet">
+	<title>Blizzard/Twitch API things</title>
+</head>
+<body>
+<div id="wrap" class="container hidden">
+		  <ul class="navbar">
+			 <li onclick="window.location.reload()"><a href="#">Home</a></li>
+			 <li><a href="#">Games</a>
+				<ul>
+				   <div onclick="handleGame(1)">
+				   <li><a href="#">StarCraft II</a></li>
+				   </div>
+				   <div onclick="handleGame(2)">
+				   <li><a href="#">Overwatch</a></li>
+				   </div>
+				   <div onclick="handleGame(3)">
+				   <li><a href="#">Diablo III</a></li>
+				   </div>
+				   <div onclick="handleGame(4)">
+				   <li><a href="#">Hearthstone</a></li>
+				   </div>
+				   <div onclick="handleGame(5)">
+				   <li><a href="#">Heroes of the Storm</a></li>
+				   </div>
+				   <div onclick="handleGame(6)">
+				   <li><a href="#">World of Warcraft</a></li>
+				   </div>
+				   <div onclick="handleGame(7)">
+				   <li><a href="#">League of Legends</a></li>
+				   </div>
+				</ul>         
+			 </li>
+			 <li><a href="https://www.twitch.tv/">Twitch</a></li>
+			 <li><a href="http://us.blizzard.com/en-us/">Blizzard</a>
+			 <li><a href="#">Contact</a>
+				<ul>
+				   <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=Rival2h@gmail.com&su=Twitch/Blizzard&tf=1">E-mail</a></li>
+				   <li><a href="https://github.com/lamburger">GitHub</a></li>
+				</ul>         
+			 </li>
+		  </ul>
+</div>
+<div id="content"></div>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="moment.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+ 

@@ -1,0 +1,52 @@
+
+<div id='streampage'>
+	<div id="streambox">
+		<div id="stream"></div>
+		<div id="chat"></div>
+	</div>
+
+
+	<div id="twitchinfo">
+		<div class='row'>
+			<div id="banner"></div>
+		</div>
+
+		<div class="row">
+			<h2 id="gamesince"></h2>
+		</div>
+
+		<div class='row'>
+			<div class="column half">
+				<h2 id="displayname"></h2>
+			</div>
+			<div class="column half">
+				<h2 id="createdat"></h2>
+			</div>	
+		</div>
+
+		<div class='row'>
+			<div class="column half">
+				<h2 id="twitchpartner"></h2>
+			</div>
+			<div class="column half">
+				<h2 id="streamlive"></h2>
+			</div>
+		</div>
+		<div class='row'>
+			<div class="column half">
+				<h2 id="twitchviews"></h2>
+			</div>
+			<div class="column half">
+				<h2 id="currentviews"></h2>
+			</div>	
+		</div>
+	</div>
+
+
+
+	<form onsubmit= "riotApiCall()" id="searchBar">
+		<label for="query"></label>
+		<input type="text" id="summonerName">
+		<button id="searchbox" type="submit">Search</button>
+	</form>
+</div>
