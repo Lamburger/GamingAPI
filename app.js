@@ -128,6 +128,7 @@ function fillGameContent(stream){
 
 
 
+
 function twitchAPI(game){
   $.ajax({
     type: 'GET',
