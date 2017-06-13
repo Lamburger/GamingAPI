@@ -90,7 +90,7 @@ function setGame(streamID) {
 
 function fillGameContent(stream){
 
-  var iframe = '<iframe ' + 'src=http://player.twitch.tv/?channel=' + stream.channel.name + '&autoplay=true' + ' ' + 'height="300" ' + 'width="500" ' + 'frameborder="<frameborder>" ' + 'scrolling="<scrolling>" ' + 'allowfullscreen="<allowfullscreen>"> ' + '</iframe>'
+  var iframe = '<iframe ' + 'src=https://player.twitch.tv/?channel=' + stream.channel.name + '&autoplay=true' + ' ' + 'height="300" ' + 'width="500" ' + 'frameborder="<frameborder>" ' + 'scrolling="<scrolling>" ' + 'allowfullscreen="<allowfullscreen>"> ' + '</iframe>'
   var ichat = '<iframe frameborder="<frameborder width>"' + 'scrolling="<scrolling>"' + 'id="' + stream.channel._id + '"' + 'src="' + stream.channel.url + '/chat"' + 'height="500"' + 'width="500">' + '</iframe>'
   var profileBanner = '<img src="' + stream.channel.profile_banner + '">'
   var displayName = stream.channel.display_name
